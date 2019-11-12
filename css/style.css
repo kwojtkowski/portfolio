@@ -27,6 +27,13 @@ nav { background: #000;}
 
 
 
+::-webkit-scrollbar { width: 15px; background:linear-gradient(to right, #000 0%, #AAA 50%, #000 100%)}
+::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey; border-radius: 8px; }
+::-webkit-scrollbar-thumb { background: linear-gradient(to right, #A60 0%, #C70 50%, #A60 100%); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #FF9933; }
+
+
+
 section {min-height:100vh; }
 	
 
