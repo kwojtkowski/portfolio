@@ -1,0 +1,92 @@
+html { height: 100%; }
+body {
+	color:#FFF;
+	height: 100%;
+	font-family:'Play', sans-serif;
+}
+
+header {box-shadow:0px 0px 6px #000, 0px 0px 6px #000, 0px 0px 6px #000}
+nav { background: #000;}
+
+
+.navbar-nav > li {
+	border-radius:3px;
+	transition:0.2s;
+	padding:0px 10px;
+	font-weight:bold;
+}
+.navbar-nav > li a { color:#FFF; text-shadow:1px 1px 2px #000; }
+
+.navbar-nav > li:hover {
+	background:#0005;
+	box-shadow:0px 0px 5px #000;
+}
+
+.flag {background:none; border:none; outline: none}
+
+
+
+
+section {min-height:100vh; }
+.tlo1 {
+	
+	background-image: url(../img/chrome-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.name {text-shadow:2px 2px 3px #000; font-weight:bold; opacity:0; padding-bottom:30px; text-align:center; animation: nameAnimate 1s forwards;}
+@keyframes nameAnimate {
+  0%{opacity:0; padding-bottom:30px;}
+  100% {opacity:1; padding-bottom:10px;}
+}
+
+.status {text-shadow:2px 2px 3px #000; color:#F80; font-weight:bold; padding-top:30px; opacity:0; text-align:center; animation: statusAnimate 1s forwards;}
+@keyframes statusAnimate {
+  0%{opacity:0; padding-top:30px;}
+  100% {opacity:1; padding-top:10px;}
+}
+
+
+.separateLine {
+	margin:auto;
+	width:0px; height:6px; 
+	border-radius:3px; 
+	background:#FFF; 
+	animation: separateLonger 2s forwards;
+}
+
+@keyframes separateLonger {
+  0%{width:0px;}
+  50% {width:0px;}
+  100% {width:60vw;}
+}
+
+
+.przewin {
+	width:60px;
+	height:60px;
+	position:absolute;
+	bottom:60px; right:60px;
+	padding:4px 12px;
+	transform:rotate(90deg);
+	border:3px solid #FFF;
+	border-radius:30px;
+	font-size:30px;
+	animation: przewinAnimate 2.5s forwards;
+	transition:0.3s;
+	opacity:0;
+}
+@keyframes przewinAnimate {
+  0%{opacity:0;}
+  80%{opacity:0;}
+  100% {opacity:1;}
+}
+.przewin:hover {
+	background:#FFF;
+	color:#000;
+	cursor:pointer;
+}
+
+
