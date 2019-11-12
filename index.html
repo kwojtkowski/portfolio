@@ -8,17 +8,17 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<title>Krystian Wojtkowski</title>
 </head>
-<body>
-	<section class="tlo1">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<section id="sect1">
 		<header>
 			<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
 				<a class="navbar-brand" href="#"><img width="30" height="30" src="img/logo.png"/></a>
 				<div id="menu" class="collapse navbar-collapse">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="#">O mnie</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Umiejętności</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Projekty</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+						<li class="nav-item"><a class="nav-link" href="#sect1">O mnie</a></li>
+						<li class="nav-item"><a class="nav-link" href="#sect2">Umiejętności</a></li>
+						<li class="nav-item"><a class="nav-link" href="#sect3">Projekty</a></li>
+						<li class="nav-item"><a class="nav-link" href="#sect4">Kontakt</a></li>
 					</ul>
 				</div>
 				<button type="button" class="flag ml-auto" ><img id="flag" height="20" width="30" src="img/PL.jpg"></button>
@@ -36,12 +36,59 @@
 		</div>
 		<div class="przewin">&#10148;</div>
 	</section>
-	<section>
+	<section id="sect2">
 		
 	</section>
+	<section id="sect3">
+		
+	</section>
+	<section id="sect4">
+		
+	</section>
+	
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+  
+	$( ".nav-item" ).click(function() {
+		if(!$(this).hasClass("active"))
+		{
+			$('.nav-item.active').removeClass('active');
+			$(this).addClass('active');
+		}
+		
+	});
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#menu a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menu-center ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+
+</script>
 </body>
 </html>
