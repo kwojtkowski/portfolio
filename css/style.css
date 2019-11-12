@@ -3,6 +3,8 @@ body {
 	color:#FFF;
 	height: 100%;
 	font-family:'Play', sans-serif;
+	background: url(../img/chrome-background.jpg) no-repeat center fixed;
+	background-size:cover;
 }
 
 header {box-shadow:0px 0px 6px #000, 0px 0px 6px #000, 0px 0px 6px #000}
@@ -28,13 +30,8 @@ nav { background: #000;}
 
 
 section {min-height:100vh; }
-.tlo1 {
 	
-	background-image: url(../img/chrome-background.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
 
-}
 
 .name {text-shadow:2px 2px 3px #000; font-weight:bold; opacity:0; padding-bottom:30px; text-align:center; animation: nameAnimate 1s forwards;}
 @keyframes nameAnimate {
