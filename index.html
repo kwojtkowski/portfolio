@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<title>Krystian Wojtkowski</title>
@@ -22,7 +22,7 @@
 						<li class="nav-item"><a class="nav-link lang" key="navBar5" href="#sect4">Kontakt</a></li>
 					</ul>
 				</div>
-				<img id="flag" class="ml-auto" height="20" width="30" sLang="PL" src="img/PL.jpg" onClick="changeLanguage()">
+				<img id="flag" class="ml-auto" height="20" width="30" sLang="PL" src="img/PL.jpg" onClick="changeLanguage()" style="cursor:pointer;">
 				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
 				
 				
@@ -31,23 +31,65 @@
 		</header>
 		
 		<div style="width:100%; text-align:center; position:absolute; top:50%; transform:translateY(-50%)">
-			<h1 class="display-2 col-12 name">Krystian Wojtkowski</h1>
+			<h1 class="display-2 name">Krystian Wojtkowski</h1>
 			<div class="separateLine"></div>
-			<h3 class="display-5 col-12 status">Junior FullStack Developer</h3>
+			<h3 class="display-5 status">Junior FullStack Developer</h3>
 		</div>
 		<div class="przewin"><a class="nav-link" href="#sect1">&#10148;</a></div>
 	</section>
 	<section id="sect1">
-		
+		<div class="container">
+			<div class="maxDiv">
+				<h1 class="display-2 animShow">O mnie</h1>
+				
+				<div class="animShow" style="border:1px solid #F80; border-radius:10px; box-shadow:inset 0 0 10px #A60, inset 0 0 10px #A60, 0 0 10px #A60; width:100%; padding:20px; background:#AAA3; margin-top:30px; font-size:18px">
+					Nazywam się Krystian Wojtkowski, mam 23 lata i mieszkam w okolicy Warszawy.<br>
+					Z Programowaniem mam doczynienia już od pierwszych lat gimnazjum.<br>
+					Przez ten czas próbowałem swoich sił w programowaniu aplikacji na systemy Android, a także aplikacji desktopowych (C#, Visual Basic).<br><br>
+					Ostatecznie na dłużej zostałem przy tworzeniu stron w języku PHP z wykorzystaniem baz danych (MySQL). 
+				</div>
+				
+				
+				<h1 class="display-5 animShow" style="margin-top:80px; color:#F80">Moje strony cechuje</h1>
+				<div class="row">
+					<div class="col-md-6 col-lg-3 myFeatures animShow2">
+						<div><img src="img/clarity-icon.png"/></div>
+						<p class="thread">Przejrzystość</p>
+						<p class="descr">Przyjemne dla oka</p>
+					</div>
+					<div class="col-md-6 col-lg-3 myFeatures animShow2">
+						<div><img src="img/ruler-icon.png"/></div>
+						<p class="thread">Dokładność</p>
+						<p class="descr">Dopracowane do wszystkich urządzeń</p>
+					</div>
+					<div class="col-md-6 col-lg-3 myFeatures animShow2">
+						<div><img src="img/easy-icon.png"/></div>
+						<p class="thread">Prostota</p>
+						<p class="descr">Intuicyjne i łatwe w obsłudze</p>
+					</div>
+					<div class="col-md-6 col-lg-3 myFeatures animShow2">
+						<div><img src="img/functional-icon.png"/></div>
+						<p class="thread">Funkcjonalność</p>
+						<p class="descr">Spełniające swoją rolę</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section id="sect2">
-		
+		<div class="container">
+			<h1 class="display-3 animShow">Umiejętności</h1>
+		</div>
 	</section>
 	<section id="sect3">
-		
+		<div class="container">
+			<h1 class="display-2 animShow">Projekty</h1>
+		</div>
 	</section>
 	<section id="sect4">
-		
+		<div class="container">
+			<h1 class="display-2 animShow">Kontakt</h1>
+		</div>
 	</section>
 	
 	<script src="js/lang.js"></script>
@@ -67,22 +109,25 @@ $(document).ready(function(){
       });
     }
   });
+  
+	$(".animShow, .animShow2").inViewport(function(px){
+		if(px) $(this).addClass("triggeredCSS3") ;
+	});
 });
 
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#menu a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#menu-center ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
+
+;(function($, win) {
+  $.fn.inViewport = function(cb) {
+     return this.each(function(i,el){
+       function visPx(){
+         var H = $(this).height(),
+             r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+         return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+       } visPx();
+       $(win).on("resize scroll", visPx);
+     });
+  };
+}(jQuery, window));
 
 </script>
 </body>
