@@ -42,7 +42,7 @@
 			<div class="maxDiv">
 				<h1 class="display-2 animShow">O mnie</h1>
 				
-				<div class="animShow" style="border:1px solid #F80; border-radius:10px; box-shadow:inset 0 0 10px #A60, inset 0 0 10px #A60, 0 0 10px #A60; width:100%; padding:20px; background:#AAA3; margin-top:30px; font-size:18px">
+				<div class="animShow divNeon">
 					Nazywam się Krystian Wojtkowski, mam 23 lata i mieszkam w okolicy Warszawy.<br>
 					Z Programowaniem mam doczynienia już od pierwszych lat gimnazjum.<br>
 					Przez ten czas próbowałem swoich sił w programowaniu aplikacji na systemy Android, a także aplikacji desktopowych (C#, Visual Basic).<br><br>
@@ -78,7 +78,72 @@
 	</section>
 	<section id="sect2">
 		<div class="container">
-			<h1 class="display-3 animShow">Umiejętności</h1>
+			<div class="maxDiv">
+				<h1 class="display-3 animShow">Umiejętności</h1>
+				<div class="row">
+					<div align="center" class="col-md-4 animShow">
+						<div class="mySkills green">
+							<div class="circleSkillLvl procent pr90">
+								<div class="circleDescr"><p>90%</p></div>
+							</div>
+							<p class="title">HTML</p>
+						</div>
+					</div>
+					<div align="center" class="col-md-4 animShow">
+						<div class="mySkills yellow">
+							<div class="circleSkillLvl procent pr85">
+								<div class="circleDescr"><p>85%</p></div>
+							</div>
+							<p class="title">CSS</p>
+						</div>
+					</div>
+					<div align="center" class="col-md-4 animShow">
+						<div class="mySkills orange">
+							<div class="circleSkillLvl procent pr80">
+								<div class="circleDescr"><p>80%</p></div>
+							</div>
+							<p class="title">JavaScript</p>
+						</div>
+					</div>
+					
+					
+				</div>
+				
+				<div class="row">
+					<div align="center" class="col-md-6 col-lg-3 animShow">
+						<div class="mySkills blue">
+							<div class="circleSkillLvl procent pr60">
+								<div class="circleDescr"><p>60%</p></div>
+							</div>
+							<p class="title">GIMP</p>
+						</div>
+					</div>
+					<div align="center" class="col-md-6 col-lg-3 animShow">
+						<div class="mySkills purple">
+							<div class="circleSkillLvl procent pr45">
+								<div class="circleDescr"><p>45%</p></div>
+							</div>
+							<p class="title">jQuery</p>
+						</div>
+					</div>
+					<div align="center" class="col-md-6 col-lg-3 animShow">
+						<div class="mySkills pink">
+							<div class="circleSkillLvl procent pr60">
+								<div class="circleDescr"><p>60%</p></div>
+							</div>
+							<p class="title">PHP</p>
+						</div>
+					</div>
+					<div align="center" class="col-md-6 col-lg-3 animShow">
+						<div class="mySkills red">
+							<div class="circleSkillLvl procent pr50">
+								<div class="circleDescr"><p>50%</p></div>
+							</div>
+							<p class="title">MySQL</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="sect3">
@@ -110,8 +175,8 @@ $(document).ready(function(){
     }
   });
   
-	$(".animShow, .animShow2").inViewport(function(px){
-		if(px) $(this).addClass("triggeredCSS3") ;
+	$(".animShow, .animShow2, .procent").inViewport(function(px){
+		if(px) $(this).addClass("triggeredCSS3");
 	});
 });
 

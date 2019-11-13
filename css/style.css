@@ -119,3 +119,76 @@ section {min-height:100vh; border-top:2px dotted #FFF; text-align:center; displa
 .myFeatures div img {position:absolute; margin:auto; top:0; left:0; right:0; bottom:0; width:150px; height:150px}
 .myFeatures .thread {font-size:30px; font-weight:bold; margin-bottom:2px}
 .myFeatures .descr {font-size:17px; color:#FA6;}
+
+.divNeon {
+	border:1px solid #F80;
+	border-radius:10px;
+	box-shadow:inset 0 0 10px #A60, inset 0 0 10px #A60, 0 0 10px #A60;
+	padding:20px;
+	width:100%;
+	background:#AAA3;
+	margin-top:30px;
+	font-size:18px
+}
+
+.mySkills { height:320px; max-width:350px; }
+.mySkills .title { padding-top:20px; font-size:40px;}
+
+.circleSkillLvl {
+    width: 60%;
+	height: auto;
+	padding-top: 60%;
+    border-radius: 50%;
+	position:relative;
+	margin-top:20px;
+}
+
+.circleDescr {
+	width: 90%;
+	height: 90%;
+	margin:5% 0 0 5%;
+	position:absolute;
+	border-radius: 50%;
+	background: radial-gradient(#333C,#111C);
+	top:0px;
+}
+.circleDescr p {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:40px; font-weight:bold}
+
+
+.procent { background-image:linear-gradient(#111 50%, transparent 50%); transition: 2s ease-in-out; background-position:0% 0%;  background-size: 200% 200%;}
+.pr85.triggeredCSS3    {background-position:0% 85%;}
+.pr90.triggeredCSS3    {background-position:0% 90%;}
+
+.pr80.triggeredCSS3    {background-position:0% 80%;}
+.pr60.triggeredCSS3    {background-position:0% 60%;}
+.pr50.triggeredCSS3    {background-position:0% 50%;}
+.pr45.triggeredCSS3    {background-position:0% 45%;}
+
+.green .title {color:#0F0}
+.green .circleSkillLvl {filter:drop-shadow(0px 0px 4px #0F0); border:2px solid #070;  background-color: #0F0;}
+.green .circleDescr {border:2px solid #070;}
+
+.yellow .title {color:#FF0}
+.yellow .circleSkillLvl {filter:drop-shadow(0px 0px 4px #FF0); border:2px solid #770;  background-color: #FF0;}
+.yellow .circleDescr {border:2px solid #770;}
+
+.red .title {color:#F00}
+.red .circleSkillLvl {filter:drop-shadow(0px 0px 4px #F00); border:2px solid #700;  background-color: #F00;}
+.red .circleDescr {border:2px solid #700;}
+
+.blue .title {color:#08F}
+.blue .circleSkillLvl {filter:drop-shadow(0px 0px 4px #08F); border:2px solid #057;  background-color: #08F;}
+.blue .circleDescr {border:2px solid #057;}
+
+.pink .title {color:#F0F}
+.pink .circleSkillLvl {filter:drop-shadow(0px 0px 4px #F0F); border:2px solid #707;  background-color: #F0F;}
+.pink .circleDescr {border:2px solid #707;}
+
+.purple .title {color:#80F}
+.purple .circleSkillLvl {filter:drop-shadow(0px 0px 4px #80F); border:2px solid #307;  background-color: #80F;}
+.purple .circleDescr {border:2px solid #307;}
+
+.orange .title {color:#F80}
+.orange .circleSkillLvl {filter:drop-shadow(0px 0px 4px #F80); border:2px solid #730;  background-color: #F80;}
+.orange .circleDescr {border:2px solid #730;}
+
