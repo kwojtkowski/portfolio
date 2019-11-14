@@ -15,7 +15,7 @@
 		"about2.3.1" : "Intuicyjne i łatwe w obsłudze",
 		"about2.4" : "Funkcjonalność",
 		"about2.4.1" : "Spełniające swoją rolę",
-		"project1" : "Początkowo projekt był niewielką aplikacją desktopową stworzoną dla graczy \"NosTale\".<br>Zdecydowałem się jednak przenieść go na stronę internetową, używając gotowego szablonu.<br>Z biegiem czasu i samodzielnej nauki uznałem, że zaprojektować własny styl to nic trudnego!<br><br>Strona w dużej części opiera się na bazie MySQL, tworząc odpowiednio wygenerowane informacje, ukazywane użytkownikowi w czytelny sposób. Zawiera również wiele kalkuklatorów stworzonych w języku JavaScript, a także w pewnych sytuacjach zastosowana jest metoda AJAX."
+		"project1" : "Projekt stworzony dla graczy \"NosTale\", do którego początkowo używałem gotowego szablonu.<br>Z biegiem czasu i samodzielnej nauki uznałem, że zaprojektować własny styl to nic trudnego!<br><br>Strona w dużej części opiera się na bazie MySQL, tworząc odpowiednio wygenerowane informacje, ukazywane użytkownikowi w czytelny sposób. Zawiera również wiele kalkuklatorów stworzonych w języku JavaScript, a także w pewnych sytuacjach zastosowana jest metoda AJAX."
 	},
 	"EN" : {
 		"navBar1" : "Start",
@@ -33,7 +33,7 @@
 		"about2.3.1" : "Intuitive and easy to use",
 		"about2.4" : "Functional",
 		"about2.4.1" : "Fulfilling their role",
-		"project1" : "Initially, the project was only small desktop application created for \"NosTale\" players.<br>I decided to move it to website, using ready template.<br>Over time and self-study I admitted, that design my own style is nothing difficult!<br><br>The site is based on MySQL database, creating properly generated information, shown to user in clearly way. It also contains many calculators created in JavaScript and in certain situations is used AJAX method."
+		"project1" : "The project created for \"NosTale\" players, that I orginally used ready template.<br>Over time and self-study I admitted, that design my own style is nothing difficult!<br><br>The site is based on MySQL database, creating properly generated information, shown to user in clearly way. It also contains many calculators created in JavaScript and in certain situations is used AJAX method."
 	}
 };
 
