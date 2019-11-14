@@ -3,8 +3,6 @@ body {
 	color:#FFF;
 	height: 100%;
 	font-family:'Play', sans-serif;
-	background: url(../img/chrome-background.jpg) no-repeat center fixed;
-	background-size:cover;
 }
 
 header {box-shadow:0px 0px 6px #000, 0px 0px 6px #000, 0px 0px 6px #000}
@@ -34,7 +32,7 @@ nav { background: #000;}
 
 
 
-section {min-height:100vh; border-top:2px dotted #FFF; text-align:center; display: table; width:100%; padding:20px 0px}
+section {min-height:100vh; border-top:2px solid #FFF3; box-shadow:0px -2px 6px #000; text-align:center; display: table; width:100%; padding:20px 0px 0px 0px; overflow-x: hidden; overflow-y: hidden;  position:relative;}
 	
 
 
@@ -109,10 +107,25 @@ section {min-height:100vh; border-top:2px dotted #FFF; text-align:center; displa
 .animShow2.triggeredCSS3    {transform : translateY(0%); opacity:1; }
 
 
+.decotrationLaser {
+	border:1px solid #A50;
+	border-radius:2px;
+	width:4px; height: 300px;
+	position:absolute;
+	bottom:-10px; left:30px;
+	background:#F80;
+	box-shadow:0px 0px 0px #F80;
+	animation: decotrationLaserAnimate 2s ease-in-out infinite;
+}
+@keyframes decotrationLaserAnimate {
+  0%{box-shadow:0px 0px 0px #F80;}
+  50%{box-shadow:0px 0px 10px #F80;}
+  100%{box-shadow:0px 0px 0px #F80;}
+}
 
 
 
-.container {display: table-cell; vertical-align: middle; text-align:center;}
+.container {display: table-cell; vertical-align: middle; text-align:center; position:relative;}
 .maxDiv {max-width:1280px; margin:auto;}
 
 .myFeatures div {width:190px; height:190px; border-radius:95px; background:#C80; margin:auto; margin-top:30px; position:relative;}
@@ -162,7 +175,7 @@ section {min-height:100vh; border-top:2px dotted #FFF; text-align:center; displa
 .pr80.triggeredCSS3    {background-position:0% 80%;}
 .pr60.triggeredCSS3    {background-position:0% 60%;}
 .pr50.triggeredCSS3    {background-position:0% 50%;}
-.pr45.triggeredCSS3    {background-position:0% 45%;}
+.pr40.triggeredCSS3    {background-position:0% 40%;}
 
 .green .title {color:#0F0}
 .green .circleSkillLvl {filter:drop-shadow(0px 0px 4px #0F0); border:2px solid #070;  background-color: #0F0;}
@@ -192,3 +205,8 @@ section {min-height:100vh; border-top:2px dotted #FFF; text-align:center; displa
 .orange .circleSkillLvl {filter:drop-shadow(0px 0px 4px #F80); border:2px solid #730;  background-color: #F80;}
 .orange .circleDescr {border:2px solid #730;}
 
+footer { background:#333}
+
+
+.centered {display: table; margin:auto;}
+.centered > div {display: table-cell; vertical-align: middle; text-align:center; position:relative}
