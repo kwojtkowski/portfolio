@@ -144,7 +144,7 @@ section {min-height:100vh; border-top:2px solid #FFF3; box-shadow:0px -2px 6px #
 	font-size:18px
 }
 
-.mySkills { height:320px; max-width:350px; }
+.mySkills { max-width:350px; }
 .mySkills .title { padding-top:20px; font-size:40px;}
 
 .circleSkillLvl {
@@ -205,7 +205,7 @@ section {min-height:100vh; border-top:2px solid #FFF3; box-shadow:0px -2px 6px #
 .orange .circleSkillLvl {filter:drop-shadow(0px 0px 4px #F80); border:2px solid #730;  background-color: #F80;}
 .orange .circleDescr {border:2px solid #730;}
 
-footer { background:#333}
+footer { background:#222}
 
 
 .centered {display: table; margin:auto;}
