@@ -60,7 +60,7 @@ section {min-height:100vh; border-top:2px solid #FFF3; box-shadow:0px -2px 6px #
 @keyframes separateLonger {
   0%{width:0px;}
   50% {width:0px;}
-  100% {width:60vw;}
+  100% {width:70vw;}
 }
 
 
@@ -93,18 +93,18 @@ section {min-height:100vh; border-top:2px solid #FFF3; box-shadow:0px -2px 6px #
 
 .animShow{
 	opacity:0;
-    transform:translateY(-50%);
+    transform:translateY(-50px);
     transition: 1s ease;
 }
-.animShow.triggeredCSS3    {transform : translateY(0%); opacity:1; }
+.animShow.triggeredCSS3    {transform : translateY(0px); opacity:1; }
 
 
 .animShow2{
 	opacity:0;
-    transform:translateY(50%);
+    transform:translateY(50px);
     transition: 1s ease;
 }
-.animShow2.triggeredCSS3    {transform : translateY(0%); opacity:1; }
+.animShow2.triggeredCSS3    {transform : translateY(0px); opacity:1; }
 
 
 .decotrationLaser {
@@ -205,7 +205,39 @@ section {min-height:100vh; border-top:2px solid #FFF3; box-shadow:0px -2px 6px #
 .orange .circleSkillLvl {filter:drop-shadow(0px 0px 4px #F80); border:2px solid #730;  background-color: #F80;}
 .orange .circleDescr {border:2px solid #730;}
 
-footer { background:#222}
+
+
+.myProject {
+	border:1px solid #F80;
+	box-shadow: 0 0 10px #A60;
+	position:relative;
+	transition:0.5s;
+	overflow-x:hidden;
+	
+}
+.myProject .tlo {
+	max-width: 100%;
+    max-height: 100%;
+    height: auto;
+	transition:0.5s;
+	filter:brightness(70%);
+}
+.myProject .newTab {
+	width: 60px;
+    height: 60px;
+    position:absolute;
+	top:-70px; right:-70px;
+	transition:0.5s;
+}
+
+.myProject:hover{ cursor:pointer; }
+.myProject:hover .newTab { top:0px; right:0px; }
+.myProject:hover .tlo {filter:brightness(100%);}
+
+
+
+
+footer { background:#000}
 
 
 .centered {display: table; margin:auto;}
