@@ -171,8 +171,8 @@ section {min-height:100vh; border-top:2px solid #FFF3; box-shadow:0px -2px 6px #
 .procent { background-image:linear-gradient(#111 50%, transparent 50%); transition: 2s ease-in-out; background-position:0% 0%;  background-size: 200% 200%;}
 .pr85.triggeredCSS3    {background-position:0% 85%;}
 .pr90.triggeredCSS3    {background-position:0% 90%;}
-
 .pr80.triggeredCSS3    {background-position:0% 80%;}
+.pr70.triggeredCSS3    {background-position:0% 70%;}
 .pr60.triggeredCSS3    {background-position:0% 60%;}
 .pr50.triggeredCSS3    {background-position:0% 50%;}
 .pr40.triggeredCSS3    {background-position:0% 40%;}
